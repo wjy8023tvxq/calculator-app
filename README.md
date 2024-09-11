@@ -1,70 +1,85 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Calculator
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+This is a simple calculator built using React.js. The app provides functionality for basic arithmetic operations like addition, subtraction, multiplication, and division. It supports input validation and operator precedence and includes a user-friendly interface with interactive buttons and visual feedback.
 
-### `npm start`
+The app is structured in a modular way, making it easy to maintain and extend. This calculator is perfect for learning the basics of React state management and UI interactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Basic Arithmetic Operations**: Supports addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+- **Input Validation**: Prevents invalid input sequences, such as consecutive operators.
+- **Operator Precedence**: Handles multiplication and division before addition and subtraction.
+- **Clear and Backspace Functions**: Supports a `C` button for clearing input and a `←` button for deleting the last character.
+- **Real-time Result Display**: Continuously updates the display with the current input or calculation result.
+- **Visual Feedback**: Buttons provide interactive feedback on hover and press for a better user experience.
+- **Responsive Design**: The app is styled to work seamlessly across different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here are some of the key files in the project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`src/components/Calculator.js`**: This is the main component that handles the core logic and UI of the calculator, including input handling and result display.
+  
+- **`src/components/DisplayResult.js`**: A dedicated component responsible for rendering the current input and calculation result in the calculator's display area.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`src/utils/mathUtils.js`**: Contains utility functions for performing and evaluating mathematical operations. It includes logic to handle operator precedence and other key calculations.
 
-### `npm run eject`
+- **`src/App.js`**: The main application component that integrates the Calculator component into the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **`src/App.css`**: The global CSS file that provides styling for the app, including layout, button styles, and responsiveness.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation and Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project locally, follow these steps:
 
-## Learn More
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/JiayiWu-MobilePractice/calculator-app.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Navigate to the project directory**:
+   ```bash
+   cd calculator-app
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Install dependencies**:
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. **Run the app**:
+   Start the development server by running:
+   ```bash
+   npm start
+   ```
+   This will open the app in your browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once the app is running:
 
-### Making a Progressive Web App
+1. **Performing Calculations**: Use the on-screen buttons to input numbers and operators for your calculation.
+2. **Clear Input**: Press the `C` button to clear the current input.
+3. **Delete Last Character**: Press the `←` button to remove the last character.
+4. **Calculate**: Press the `=` button to calculate the result based on your input.
+5. **View Result**: The result will be shown in the display area after each calculation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Technology Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React.js**: For building the user interface and managing component states.
+- **CSS**: For styling the application, including button interactions and responsive design.
+- **JavaScript (ES6+)**: For implementing the app logic, including input handling, validation, and operator precedence.
